@@ -1,11 +1,13 @@
 <template>
-  <section>
-    <base-card>
-      <h2>Register as a coach now</h2>
-      <!-- when we receive a save-data event, the saveData method is called -->
-      <coach-form @save-data="saveData"></coach-form>
-    </base-card>
-  </section>
+  <div>
+    <section>
+      <base-card>
+        <h2>Register as a coach now</h2>
+        <!-- when we receive a save-data event, the saveData method is called -->
+        <coach-form @save-data="saveData"></coach-form>
+      </base-card>
+    </section>
+  </div>
 </template>
 
 <script>
