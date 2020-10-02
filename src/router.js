@@ -16,6 +16,8 @@ const router = createRouter({
     {
       path: '/coaches/:id',
       component: CoachDetail,
+      //   when you set prop: true, params will be passed into the component as props
+      props: true,
       //   do not include a '/' in the child path
       //   /coaches/:id/contact
       children: [{ path: 'contact', component: ContactCoach }],
